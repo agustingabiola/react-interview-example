@@ -43,7 +43,7 @@ const api = {
       });
     }
 
-    return new Promise((resolve) => setTimeout(() => resolve(results), 1000));
+    return new Promise((resolve) => setTimeout(() => resolve(results), Math.floor(Math.random() * (3000 - 500 + 1)) + 500));
   },
 };
 
