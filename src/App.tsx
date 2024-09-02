@@ -13,7 +13,7 @@ function Recommended() {
 
   return (
     <main>
-      <h1>Productos recomendados</h1>
+      <h1>Recommended products</h1>
       <ul>
         {[...products]
           .sort(() => (Math.random() > 0.5 ? 1 : -1))
@@ -21,7 +21,7 @@ function Recommended() {
           .map((product) => (
             <li key={product.id}>
               <h4>{product.title}</h4>
-              <p>{product.description}</p>
+              <p className="product-description">{product.description}</p>
               <span>$ {product.price}</span>
             </li>
           ))}
@@ -40,13 +40,13 @@ function App() {
 
   return (
     <main>
-      <h1>Tienda Mahisoft</h1>
+      <h1>Mahisoft Store</h1>
       <input name="text" placeholder="search..." type="text" onChange={(e) => setQuery(e.target.value)} />
       <ul>
         {products.map((product) => (
           <li key={product.id}>
             <h4>{product.title}</h4>
-            <p>{product.description}</p>
+              <p className="product-description">{product.description}</p>
             <span>$ {product.price}</span>
           </li>
         ))}

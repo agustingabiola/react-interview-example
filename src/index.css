@@ -15,7 +15,6 @@ code {
 
 main {
   padding: 24px;
-  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -57,6 +56,16 @@ h4 {
 
 p {
   color: #aaa;
+}
+
+.product-description {
+  height: 3lh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
 
 * {
